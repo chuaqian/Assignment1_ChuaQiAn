@@ -32,7 +32,8 @@ body {
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    border-radius: 0;
 }
 
 #background-container {
@@ -42,6 +43,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    
 }
 
 .background-image {
@@ -54,9 +56,9 @@ body {
 
 header {
     position: relative;
-    /* Remove fixed positioning */
+    
     z-index: 2;
-    /* Increase z-index */
+   
 }
 
 .lowered-text {
@@ -85,6 +87,21 @@ header {
 
 .lowered-text a,
 .lowered-text a:visited {
-    color: inherit;
-    text-decoration: none;
+    color: inherit; /* inherit the color from lowered-text*/
+    text-decoration: none; /* to remove the underline */
+}
+.minitextborder {
+    border-style: solid;
+    background-color: grey;
+
+}
+.picturecenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picturecenter img {
+    width: 20%; 
+    margin: 7px;
 }
