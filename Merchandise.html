@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Products.css">
     <title>Merchandise</title>
 </head>
-<body>
+<body class="backgroundgradient">
+    <header>
+        <img src="BTSlogo.png" alt="">
+        <div class="lowered-text" style="z-index: 5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: xx-large; font-weight: bold;">
+            <a href="index.html">HOME</a>
+
+        </div>
+    </header>
+    <div class="lowered-text" style="z-index: 5; font-family: sans-serif; font-size: medium; font-weight: bold;">
+        <a href="Members.html">Members</a>       
+        <a href="Discography.html">Discography</a>
+        <a href="Announcements.html">Announcements</a>
+        <a href="Merchandise.html">Merchandise</a>
+        <a href="MusicVideos.html">Music Videos</a>
+        <a href="Profile.html">Profile</a>       
+    </div>
+    <div class="picturecenter ">
+    <div class="product ">
+        <img src="Product1.png" alt="Product1" onclick="openModal('Product1.png')">
+        <a href="" class="name image">BTS Dynamite LEGO [BTS X LEGO X DYN](LIMI)</a>
+        <div class="price">$130.00</div>
+    </div>
+    <div class="product ">
+        <img src="Product2.png" alt="Product2"onclick="openModal('Product2.png')">
+        <a href="" class="name image">[SUGA X NBA] GLITCH T-SHIRT (KNICKS)(L)</a>
+        <div class="price">$55.00</div>
+    </div>
+    <div class="product ">
+        <img src="Product3.png" alt="Product3"onclick="openModal('Product3.png')">
+        <a href="" class="name image">[SUGA X NBA] GLITCH T-SHIRT (NETS)(LIMI)   </a>
+        <div class="price">$55.00</div>
+    </div>
+    <div class="product">
+        <img src="Product4.png" alt="Product4" onclick="openModal('Product4.png')">
+        <a href="" class="name image">[SUGA X NBA] GLITCH T-SHIRT (LAKERS)</a>
+        <div class="price">$55.00</div>
+    </div>
+    <div class="product">
+        <img src="Product5.png" alt="Product5" onclick="openModal('Product5.png')">
+        <a href="" class="name image">[SUGA X NBA] GLITCH T-SHIRT (CLIPPERS)</a>
+        <div class="price">$55.00</div>
+    </div>
+    </div>
+     
+    <div class="picturecenter">
+        <div class="product ">
+            <img src="Product6.png" alt="Product6"onclick="openModal('Product6.png')">
+            <a href="" class="name image">[SUGA X NBA] GLITCH T-SHIRT (WARRIORS)</a>
+            <div class="price">$55.00</div>
+        </div>
+        <div class="product ">
+            <img src="Product7.png" alt="Product7"onclick="openModal('Product7.png')">
+            <a href="" class="name image">[SUGA X NBA] GLITCH T-SHIRT (BULLS)</a>
+            <div class="price">$55.00</div>
+        </div>
+        <div class="product ">
+            <img src="Product8.png" alt="Product8"onclick="openModal('Product8.png')">
+            <a href="" class="name image">[SUGA X NBA] GLITCH HOODIE (KNICKS)</a>
+            <div class="price">$132.00</div>
+        </div>
+        <div class="product">
+            <img src="Product9.png" alt="Product9"onclick="openModal('Product9.png')">
+            <a href="" class="name image">[SUGA X NBA] GLITCH HOODIE (NETS)</a>
+            <div class="price">$132.00</div>
+        </div>
+        <div class="product">
+            <img src="Product10.png" alt="Product10"onclick="openModal('Product10q.png')">
+            <a href="" class="name image">[SUGA X NBA] GLITCH HOODIE (LAKERS)</a>
+            <div class="price">$132.00</div>
+        </div>
+        </div>
+        <div class="modal" id="myModal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="" alt="Enlarged Product Image" id="enlargedImg">
+        </div>
     
+        <script>
+            function openModal(imgSrc) {
+                var modal = document.getElementById("myModal");
+                var img = document.getElementById("enlargedImg");
+                img.src = imgSrc;
+                modal.style.display = "flex"; // Use flex for better centering
+            }
+        
+            function closeModal() {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "none";
+            }
+        </script>
+
 </body>
 </html>
