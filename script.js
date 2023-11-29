@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const backgroundContainer = document.getElementById("background-container");
 
+
+
     function changeBackground() {
         currentIndex = (currentIndex + 1) % backgrounds.length;
         const imageUrl = backgrounds[currentIndex];
