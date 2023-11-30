@@ -14,7 +14,8 @@ body {
 
 .slider {
     display: flex;
-    width: 100%;
+    
+	width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
