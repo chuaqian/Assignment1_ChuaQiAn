@@ -25,7 +25,7 @@ body {
 	-ms-overflow-style: none; 
 	scrollbar-width:auto; 
 }
-
+/* enables scrolling for users thru slider */
 
 .slider::-webkit-scrollbar {
 	display: none;
@@ -46,7 +46,7 @@ body {
 	transform: translateX(-50%);
 	z-index: 1;
 }
-
+/* Display of slider buttons */
 .slider-nav a {
 	width: 0.5rem;
 	height: 0.5rem;

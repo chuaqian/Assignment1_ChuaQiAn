@@ -11,7 +11,7 @@ body {
 	max-width: 48rem;
 	margin: 0 auto;
 }
-
+/* Slider function to be able to work */
 .slider {
     display: flex;
     
@@ -44,7 +44,7 @@ body {
 	transform: translateX(-50%);
 	z-index: 1;
 }
-
+/* Display of slider buttons */
 .slider-nav a {
 	width: 0.5rem;
 	height: 0.5rem;
